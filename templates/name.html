@@ -1,6 +1,25 @@
-<p>Hello there, {{ Sname }}!</p>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/basic.css">
+    <title>This is a form demo!</title>
+</head>
 
-{% for name in nameList %}
-<p>Hello, {{ name }}</p>
+<form method="post">
+    Name: <input name="name" />
+    <br/>
+    <button type="submit">Submit</button>
+</form>
+<br/>
 
-{% endfor %}
+<form method="post">
+    Please enter your message: <input name="message"/>
+    <br/>
+    <button type="submit">Submit</button>
+</form>
+
+<!-- more content if a name exists -->
+{% if name %}
+    <div class="content">
+        <p>Hello, {{ name }}!!</p>
+    </div>
+{% endif %}
