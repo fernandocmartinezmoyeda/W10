@@ -1,5 +1,5 @@
-.vscode/
-static/secret.txt
+mySecretkey.txt
+flaskEnv/
 .DS_Store
 .env
 .flaskenv
